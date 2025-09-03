@@ -1,0 +1,10 @@
+/*
+strings: abbreviate_text
+*/
+
+#include <stdio.h>
+
+int main() {
+    // Write your code here
+    return 0;
+}
