@@ -1,8 +1,0 @@
-// 64. WRITE A C PROGRAM TO FIND THE SUM OF FIRST N NATURAL NUMBERS WHICH ARE NOT DIVISIBLE BY 3 OR 5 USING LOOPS AND IF-ELSE STATEMENTS?
-
-#include <stdio.h>
-
-int main() {
-    // Your code here
-    return 0;
-}
