@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){int n,m;if(scanf("%d%d",&n,&m)!=2)return 0;int a[1000],b[1000];for(int i=0;i<n;i++)scanf("%d",&a[i]);for(int i=0;i<m;i++)scanf("%d",&b[i]);int out[1000],k=0;for(int i=0;i<n;i++){int fa=0;for(int x=0;x<i;x++)if(a[x]==a[i]){fa=1;break;}if(fa)continue;int f=0;for(int j=0;j<m;j++)if(b[j]==a[i]){f=1;break;}if(f)out[k++]=a[i];}for(int i=0;i<k;i++)printf(i==k-1?"%d":"%d ",out[i]);return 0;}

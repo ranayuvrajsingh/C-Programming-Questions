@@ -1,0 +1,2 @@
+#include <stdio.h>
+int main(){int r1,c1,r2,c2;if(scanf("%d%d%d%d",&r1,&c1,&r2,&c2)!=4)return 0;if(c1!=r2){printf("Invalid");return 0;}long long A[100][100],B[100][100],C[100][100];for(int i=0;i<r1;i++)for(int j=0;j<c1;j++)scanf("%lld",&A[i][j]);for(int i=0;i<r2;i++)for(int j=0;j<c2;j++)scanf("%lld",&B[i][j]);for(int i=0;i<r1;i++){for(int j=0;j<c2;j++){long long s=0;for(int k=0;k<c1;k++)s+=A[i][k]*B[k][j];C[i][j]=s;}}for(int i=0;i<r1;i++){for(int j=0;j<c2;j++)printf(j==c2-1?"%lld":"%lld ",C[i][j]);if(i<r1-1)printf("\n");}return 0;}
